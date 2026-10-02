@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BASIT RUN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="menu" class="screen">
+      <div class="logo">BASIT <span>RUN</span></div>
+      <div class="subtitle">RUN • JUMP • COLLECT</div>
+      <button id="playBtn">▶ PLAY</button>
+      <div class="high">HIGH SCORE: <b id="menuHigh">0</b></div>
+    </div>
+
+    <div id="game" class="screen hidden">
+      <canvas id="gameCanvas"></canvas>
+      <div class="hud">
+        <div class="scoreBox">SCORE <b id="score">0</b></div>
+        <button id="muteBtn" class="iconBtn">🔊</button>
+        <button id="pauseBtn" class="iconBtn">Ⅱ</button>
+      </div>
+      <div id="pauseOverlay" class="overlay hidden">
+        <div class="panel">
+          <h2>PAUSED</h2>
+          <button id="resumeBtn">RESUME</button>
+          <button id="pauseMenuBtn" class="secondary">MAIN MENU</button>
+        </div>
+      </div>
+      <div class="tapHint">TAP TO JUMP</div>
+    </div>
+
+    <div id="over" class="screen hidden">
+      <div class="gameover">GAME OVER</div>
+      <div class="result">SCORE <b id="finalScore">0</b></div>
+      <div class="result">HIGH SCORE <b id="overHigh">0</b></div>
+      <button id="againBtn">↻ PLAY AGAIN</button>
+      <button id="menuBtn" class="secondary">MAIN MENU</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

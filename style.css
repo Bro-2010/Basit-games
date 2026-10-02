@@ -1,0 +1,32 @@
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;font-family:Arial,sans-serif;background:#10182f;color:#fff}
+body{touch-action:manipulation}
+#app{width:100%;height:100%;position:relative;overflow:hidden}
+.screen{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.hidden{display:none!important}
+#menu,#over{background:linear-gradient(160deg,#172b58,#5b2d82 55%,#ed5c73)}
+.logo{font-size:clamp(42px,14vw,78px);font-weight:1000;letter-spacing:2px;text-shadow:0 7px 0 #18203d,0 10px 20px #0008}
+.logo span{color:#ffd83d}
+.subtitle{margin:8px 0 34px;font-size:12px;letter-spacing:5px;opacity:.8}
+button{border:0;border-radius:18px;background:#ffd83d;color:#171b35;font-weight:900;font-size:18px;padding:17px 38px;min-width:210px;box-shadow:0 7px 0 #c48d17;cursor:pointer}
+button:active{transform:translateY(5px);box-shadow:0 2px 0 #c48d17}
+.high{margin-top:28px;font-size:14px;letter-spacing:1px}
+.high b{color:#ffd83d}
+.secondary{margin-top:16px;background:#ffffff22;color:#fff;border:2px solid #ffffff66;box-shadow:none}
+#game{background:#7bdcff}
+#gameCanvas{position:absolute;width:100%;height:100%;inset:0}
+.hud{position:absolute;top:max(14px,env(safe-area-inset-top));left:0;right:0;display:flex;align-items:center;padding:12px 14px;gap:8px;pointer-events:none}
+.scoreBox{background:#111a35dd;border:2px solid #ffffff33;border-radius:14px;padding:10px 14px;font-size:12px;letter-spacing:1px}
+.scoreBox b{font-size:18px;color:#ffd83d;margin-left:5px}
+.iconBtn{pointer-events:auto;min-width:46px;width:46px;height:46px;padding:0;margin-left:auto;border-radius:14px;font-size:20px;background:#111a35dd;color:#fff;box-shadow:none}
+#pauseBtn{margin-left:0}
+.tapHint{position:absolute;bottom:max(16px,env(safe-area-inset-bottom));font-size:11px;letter-spacing:3px;background:#111a3544;padding:8px 12px;border-radius:20px;opacity:.65}
+.overlay{position:absolute;inset:0;background:#09112699;display:flex;align-items:center;justify-content:center}
+.panel{background:#182344ee;border:2px solid #ffffff22;border-radius:25px;padding:30px;text-align:center;box-shadow:0 20px 60px #0008}
+.panel h2{margin:0 0 24px;font-size:34px}
+.panel button{margin:6px}
+.gameover{font-size:clamp(38px,12vw,65px);font-weight:1000;text-shadow:0 6px 0 #351d45;margin-bottom:28px}
+.result{font-size:14px;margin:7px;letter-spacing:2px}
+.result b{font-size:24px;color:#ffd83d;margin-left:8px}
+#againBtn{margin-top:26px}
+@media(max-height:500px){button{padding:11px 28px}.subtitle{margin-bottom:18px}.gameover{margin-bottom:12px}}
